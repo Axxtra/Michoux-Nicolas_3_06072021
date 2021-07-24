@@ -1,0 +1,198 @@
+$violet :#9356DC;
+$rose : #FF79DA;
+$fond_gris :rgb(243, 243, 243);
+
+
+#entete
+{
+    margin-top: 3%;
+    text-align: center;    
+}
+
+body
+{
+    margin: 0%;
+
+    p
+    {
+        margin: 2%;
+    }
+}
+
+.conteneur_recherche
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.element_recherche
+{
+    display: flex;
+}
+
+
+.conteneur_map
+{
+    display: flex;
+    justify-content: center; 
+    background-color: rgb(230, 230, 230);
+    padding: 3%;
+    margin-top: 2%;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3) inset;
+    width: 100%;
+}
+
+.icone_map
+{
+    margin-right: 3%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.conteneur_navigation
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    margin-top: 10%;
+    justify-content: center;
+    
+}
+
+.conteneur_recherche
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+    
+    .fond_recherche
+    {
+        background: $fond_gris ;
+        padding-bottom: 50px;
+    }
+
+    .ancre_recherche
+    {
+        border-radius: 50px 50px 50px 50px;
+        background: linear-gradient(170deg, $rose, $violet );
+        width: 200px;
+        padding: 3%;
+        margin: auto;
+        margin-top: 4%; 
+    }
+}
+
+.element_nav
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 75vw;
+    border-radius: 20px 20px 20px 20px;
+    padding: 5%;
+    margin: auto;
+    margin-top: 7%;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3) 
+}
+
+.element_nav2
+{
+    @extend .element_nav;
+    background-color:#f2e9fc;
+}
+
+.nombre
+{
+    height: 26px;
+    width: 26px;
+    border-radius: 13px 13px 13px 13px;
+    background-color: $violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: -23%;
+    
+}
+
+.icone_navcolor
+{
+    color: $violet;
+}
+
+.titre_nav, .element_titre
+{
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.conteneur_cartes
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    margin-top: 10%;
+    align-content: space-between;
+}
+
+.conteneur_restaurant
+{
+    display: flex;
+    flex-direction: column;
+    width: 87vw;
+    height: 250px;
+    border-radius: 13px 13px 13px 13px;
+    border: #F2F2F2 1px solid;
+    margin-bottom: 7%;
+    align-items: center;
+   
+}
+.img_presentation
+{
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 13px 13px 0px 0px;
+}
+
+
+.description_restaurant
+{
+    display: flex; 
+    justify-content: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-right: 7%;
+
+}
+.conteneur_description
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    justify-content: space-evenly;
+   
+    
+}
+
+.titre_restaurant
+{
+    font-weight: bold;
+}
+
+.note_restaurant
+{
+    margin-top: 4%;
+}
+
+section
+{
+    background-color: $fond_gris ;
+}

@@ -14,7 +14,9 @@
 {
     margin-top: 3%;
     text-align: center;    
+    
 }
+
 
 .entete_menu
 {
@@ -56,16 +58,21 @@ body
 .conteneur_recherche
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: flex;
     text-align: center; 
-    background-color: $fond_gris ;
+    background-color: $rose ;
     margin-top: 3%;
+    
+    
     
 }
 
-.element_recherche
+conteneur_map
 {
     display: flex;
+    border-radius: 12px 12px 12px 12px;
+    width:30%;
+    
 }
 
 
@@ -83,6 +90,7 @@ body
 .icone_map
 {
     margin-right: 3%;
+    border-radius: none;
 }
 
 a{

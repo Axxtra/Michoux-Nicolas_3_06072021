@@ -12,16 +12,27 @@
   flex-direction: row;
   padding-top: 5%;
   padding-bottom: 3%;
+  justify-content: center;
+}
+
+.element
+{
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .iconecolor {
-  color: #FF79DA;
+  color: black;
+  
 }
 
 .icone_retour {
   padding: 3%;
   margin-left: 3%;
   margin-right: 10%;
+  
+  
 }
 
 h2 {
@@ -37,27 +48,29 @@ body p {
 
 .conteneur_recherche {
   display: flex;
-  flex-direction: column;
+  flex-direction: flex;
   text-align: center;
-  background-color: #f3f3f3;
   margin-top: 3%;
+  width: 100%;
 }
 
-.element_recherche {
-  display: flex;
-}
+
 
 .conteneur_map {
   display: flex;
   justify-content: center;
   background-color: #e6e6e6;
-  padding: 3%;
+  padding: 1%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3) inset;
-  width: 100%;
+  width: 15%;
+  height: 12px;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .icone_map {
   margin-right: 3%;
+  border-radius: none;
+  
 }
 
 a {
@@ -67,10 +80,9 @@ a {
 
 .conteneur_navigation {
   display: flex;
-  flex-direction: column;
-  margin: 5%;
-  margin-top: 10%;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 2%;
+  
 }
 
 .conteneur_recherche {
@@ -78,20 +90,23 @@ a {
   flex-direction: column;
   margin-bottom: 4%;
 }
+
 .conteneur_recherche .fond_recherche {
   background: #f3f3f3;
   padding-bottom: 50px;
 }
+
 .conteneur_recherche .ancre_recherche {
   border-radius: 50px 50px 50px 50px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
-  width: 200px;
-  padding: 3%;
-  margin: auto;
+  width: 50px;
+  padding: 1%;
+  margin: 1%;
   margin-top: 4%;
   color: white;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
+
 .conteneur_recherche .ancre_recherche:hover {
   background: #ff93e1;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
@@ -99,14 +114,13 @@ a {
 
 .element_nav, .element_nav2 {
   display: flex;
-  align-items: center;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 75vw;
+  width: 15vw;
   border-radius: 20px 20px 20px 20px;
-  padding: 5%;
-  margin: auto;
-  margin-top: 7%;
+  padding: 1%;
+  
+  margin-top: 2%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -115,51 +129,59 @@ a {
 }
 
 .nombre {
-  height: 26px;
-  width: 26px;
-  border-radius: 13px 13px 13px 13px;
-  background-color: #9356DC;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  margin-left: -23%;
+  display: none;
 }
 
 .icone_navcolor {
   color: #9356DC;
 }
 
-.titre_nav, .element_titre {
+.titre_nav  {
   font-weight: bold;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  margin-left: 5%;
+  padding-bottom: 1%;
+  height: 2%;
+  margin-top: 1%;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
 }
+
+.element_titre
+{
+  font-weight: bold;
+  padding-bottom: 1%;
+  height: 2%;
+  margin-top: 1%;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 
 #conteneur_cartes {
   display: flex;
-  flex-direction: column;
+  padding-right: 4%;
   margin-bottom: 0%;
-  margin-top: 10%;
-  align-content: space-between;
+  margin-top: 2%;
+  justify-content: space-between;
   background-color: #f3f3f3;
-  width: 100%;
+  
   align-content: center;
 }
 
 .conteneur_restaurant {
   display: flex;
   flex-direction: column;
-  width: 87vw;
+  width: 15vw;
   height: 250px;
   border-radius: 13px 13px 13px 13px;
   border: #F2F2F2 1px solid;
   margin-bottom: 7%;
-  align-items: center;
+  margin-top: 3%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
-  margin: auto;
+  margin-right: 2%;
   margin-bottom: 5%;
+  
 }
 
 .img_presentation {
@@ -200,15 +222,13 @@ a {
 footer {
   color: white;
   background-color: #333333;
-  padding-bottom: 5%;
+  
 }
 
 .conteneur_footer {
   display: flex;
   flex-direction: column;
-  margin: 7%;
-  margin-top: 0%;
-  height: 100%;
+  margin-left: 7%;
   align-content: space-between;
 }
 
@@ -291,14 +311,16 @@ footer {
 .conteneur_imgpresentation {
   background-image: url("../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   width: 100%;
-  height: 250px;
+  height: 800px;
+  border-radius: 2%;
   background-size: cover;
 }
 
 .conteneur_imgpresentation2 {
   background-image: url("../images/stil-u2Lp8tXIcjw-unsplash.jpg");
   width: 100%;
-  height: 250px;
+  height: 800px;
+  border-radius: 2%;
   background-size: cover;
 }
 
@@ -348,4 +370,4 @@ footer {
   font-size: 12px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=desktop.css.map */

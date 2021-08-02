@@ -11,41 +11,44 @@
         <script src="https://kit.fontawesome.com/d55ef477fb.js" crossorigin="anonymous"></script>
     </head>
 
-    <header>
-        <div id="entete">
-            <div class="element"><img class="logo_entete" src="images/ohmyfood@2x.svg" alt="logo"></div>
-        </div>
-    </header>
+    
+        <header>
+            <div id="entete">
+                <div class="element"><img class="logo_entete" src="images/ohmyfood@2x.svg" alt="logo"></div>
+            </div>
+        </header>
 
-    <body>
-        <section>
-            <div class="conteneur_recherche">
-
-                <div class="element_recherche">
-                    <div class="conteneur_map">
-                        <div class="icone_map"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="Texte_map">Paris, Belleville</div>
-                    </div>
-                </div>
-
-                <div class="fond_recherche">
-                    <div class="element_recherche">
-                        <h1>Réservez le menu qui vous convient</h1>
-                    </div>
+        <body>
+            <div class="lds-ripple"><div></div><div></div></div>
+            <div id="loader">
+            <section>
+                <div class="conteneur_recherche">
 
                     <div class="element_recherche">
-                        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                        <div class="conteneur_map">
+                            <div class="icone_map"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="Texte_map">Paris, Belleville</div>
+                        </div>
                     </div>
 
-                    <div class="element_recherche">
-                        <a href="#conteneur_cartes" class="ancre_recherche">Explorer nos restaurants</a>
+                    <div class="fond_recherche">
+                        <div class="element_recherche">
+                            <h1>Réservez le menu qui vous convient</h1>
+                        </div>
+
+                        <div class="element_recherche">
+                            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                        </div>
+
+                        <div class="element_recherche">
+                            <a href="#conteneur_cartes" class="ancre_recherche">Explorer nos restaurants</a>
+                        </div>
                     </div>
-                </div>
-            </div> 
-        </section>
-        <nav>
-            <div class="conteneur_navigation">
-                <div class="titre_nav"><strong>Fonctionnement</strong></div>
+                </div> 
+            </section>
+            <nav>
+                <div class="conteneur_navigation">
+                    <div class="titre_nav"><strong>Fonctionnement</strong></div>
 
                     <div class="element_nav">
                         <div class="nombre">1</div>
@@ -64,71 +67,75 @@
                         <div class="icone_navcolor"><i class="fas fa-store"></i></div>
                         <div class="texte_nav">Dégustez au restaurant</div>
                     </div>
-            </div>
-        </nav>
+                </div>
+            </nav>
 
-        <section>
-            <div id="conteneur_cartes">
-                <div class="element_titre">Restaurants</div>
-                <a href="./palettedugout.html">
-                    <div class="conteneur_restaurant">
-                        <div class="img_restaurant"><img class="img_presentation" src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image La palette du goût"></div>
-                        <div class="description_restaurant"> 
-                            <div class="conteneur_description">   
-                                <div class="titre_restaurant">La palette du goût</div>
-                                <div class="localisation_restaurant">Ménilmontant</div>
-                            </div>
-                            <div class="note_restaurant"><i class="far fa-heart"></i></div>
-                        </div> 
-                    </div>
-                </a>
-                <a href="./noteenchantee.html">
-                    <div class="conteneur_restaurant">
-                        <div class="img_restaurant"><img class="img_presentation" src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image La note enchantée"></div>
-                        <div class="description_restaurant"> 
-                            <div class="conteneur_description"> 
-                                <div class="titre_restaurant">La note enchantée</div>
-                                <div class="localisation_restaurant">Charonne</div>
+            <section>
+                <div id="conteneur_cartes">
+                    <div class="element_titre">Restaurants</div>
+                    <a href="./palettedugout.html">
+                        <div class="conteneur_restaurant">
+                            <div class="img_restaurant"><img class="img_presentation" src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image La palette du goût"></div>
+                            <div class="description_restaurant"> 
+                                <div class="conteneur_description">   
+                                    <div class="titre_restaurant">La palette du goût</div>
+                                    <div class="localisation_restaurant">Ménilmontant</div>
+                                </div>
+                                <div class="note_restaurant"><i class="far fa-heart"></i></div>
                             </div> 
-                            <div class="note_restaurant"><i class="far fa-heart"></i></div>
-                        </div> 
-                    </div>
-                </a>
-                <a href="./alafrancaise.html">
-                    <div class="conteneur_restaurant">
-                        <div class="img_restaurant"><img class="img_presentation" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image A la francaise"></div>
-                        <div class="description_restaurant">
-                            <div class="conteneur_description">
-                                <div class="titre_restaurant">A la française</div>
-                                <div class="localisation_restaurant">Cité rouge</div>
-                            </div>   
-                            <div class="note_restaurant"><i class="far fa-heart"></i></div>
-                        </div> 
-                    </div>
-                </a>
-                <a href="./delicedessens.html">
-                    <div class="conteneur_restaurant">
-                        <div class="img_restaurant"><img class="img_presentation" src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image Le délice des sens"></div>
-                        <div class="description_restaurant"> 
-                            <div class="conteneur_description"> 
-                                <div class="titre_restaurant">Le délice des sens</div>
-                                <div class="localisation_restaurant">Folie-Méricourt</div>
+                        </div>
+                    </a>
+
+                    <a href="./noteenchantee.html">
+                        <div class="conteneur_restaurant">
+                            <div class="img_restaurant"><img class="img_presentation" src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image La note enchantée"></div>
+                            <div class="description_restaurant"> 
+                                <div class="conteneur_description"> 
+                                    <div class="titre_restaurant">La note enchantée</div>
+                                    <div class="localisation_restaurant">Charonne</div>
+                                </div> 
+                                <div class="note_restaurant"><i class="far fa-heart"></i></div>
                             </div> 
-                            <div class="note_restaurant"><i class="far fa-heart"></i></i></div>
-                        </div> 
-                    </div>
-                </a>
-            </div>
-        </section>
-        
-    </body>
-    <footer>
-        <div class="conteneur_footer">
-            <div class="logo_footer"><h2>Ohmyfood</h2></div>
-            <div class="conteneur_proposition"><i class="fas fa-utensils"></i> Proposer un restaurant</div>
-            <div class="conteneur_partenaire"><i class="fas fa-hands-helping"></i> Devenir partenaire</div>
-            <div class="conteneur_mentions">Mentions légales</div>
-            <div class="conteneur_contact">Contact</div>
+                        </div>
+                    </a>
+
+                    <a href="./alafrancaise.html">
+                        <div class="conteneur_restaurant">
+                            <div class="img_restaurant"><img class="img_presentation" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image A la francaise"></div>
+                            <div class="description_restaurant">
+                                <div class="conteneur_description">
+                                    <div class="titre_restaurant">A la française</div>
+                                    <div class="localisation_restaurant">Cité rouge</div>
+                                </div>   
+                                <div class="note_restaurant"><i class="far fa-heart"></i></div>
+                            </div> 
+                        </div>
+                    </a>
+
+                    <a href="./delicedessens.html">
+                        <div class="conteneur_restaurant">
+                            <div class="img_restaurant"><img class="img_presentation" src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image Le délice des sens"></div>
+                            <div class="description_restaurant"> 
+                                <div class="conteneur_description"> 
+                                    <div class="titre_restaurant">Le délice des sens</div>
+                                    <div class="localisation_restaurant">Folie-Méricourt</div>
+                                </div> 
+                                <div class="note_restaurant"><i class="far fa-heart"></i></i></div>
+                            </div> 
+                        </div>
+                    </a>
+                </div>
+            </section> 
         </div>
-    </footer>
+        </body>
+        <footer>
+            <div class="conteneur_footer">
+                <div class="logo_footer"><h2>Ohmyfood</h2></div>
+                <div class="conteneur_proposition"><i class="fas fa-utensils"></i> Proposer un restaurant</div>
+                <div class="conteneur_partenaire"><i class="fas fa-hands-helping"></i> Devenir partenaire</div>
+                <div class="conteneur_mentions">Mentions légales</div>
+                <div class="conteneur_contact">Contact</div>
+            </div>
+        </footer>
+    
 </html>

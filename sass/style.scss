@@ -27,7 +27,7 @@
 }
 .iconecolor
 {
-    color:$rose;
+    color:black;
 }
 
 .icone_retour
@@ -433,11 +433,14 @@ footer
     }
 
    
+    .bloc_page {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        text-align: justify;
+    }
    
    
    
    
-   
-
-
-   
+    

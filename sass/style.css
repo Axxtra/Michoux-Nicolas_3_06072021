@@ -15,7 +15,7 @@
 }
 
 .iconecolor {
-  color: #FF79DA;
+  color: black;
 }
 
 .icone_retour {
@@ -347,5 +347,14 @@ footer {
 .description_platgout {
   font-size: 12px;
 }
+
+.bloc_page {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  text-align: justify;
+}
+
+
 
 /*# sourceMappingURL=style.css.map */

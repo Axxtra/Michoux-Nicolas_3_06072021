@@ -355,6 +355,29 @@ footer {
   text-align: justify;
 }
 
+.progress__bar {
+  transform-origin: 0% 50%;
+  border: 1px solid black;
+  width: 50px;
+  height: 5px;
+  position: relative;
+  left: 50%;
+  top: 300px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  animation: progress-bar 3000ms 150ms;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
 
+@keyframes progress-bar {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

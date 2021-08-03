@@ -15,8 +15,7 @@
   justify-content: center;
 }
 
-.element
-{
+.element {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -24,15 +23,12 @@
 
 .iconecolor {
   color: black;
-  
 }
 
 .icone_retour {
   padding: 3%;
   margin-left: 3%;
   margin-right: 10%;
-  
-  
 }
 
 h2 {
@@ -42,6 +38,7 @@ h2 {
 body {
   margin: 0%;
 }
+
 body p {
   margin: 2%;
 }
@@ -53,8 +50,6 @@ body p {
   margin-top: 3%;
   width: 100%;
 }
-
-
 
 .conteneur_map {
   display: flex;
@@ -70,7 +65,6 @@ body p {
 .icone_map {
   margin-right: 3%;
   border-radius: none;
-  
 }
 
 a {
@@ -82,7 +76,6 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 2%;
-  
 }
 
 .conteneur_recherche {
@@ -119,7 +112,6 @@ a {
   width: 15vw;
   border-radius: 20px 20px 20px 20px;
   padding: 1%;
-  
   margin-top: 2%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 }
@@ -136,7 +128,7 @@ a {
   color: #9356DC;
 }
 
-.titre_nav  {
+.titre_nav {
   font-weight: bold;
   padding-bottom: 1%;
   height: 2%;
@@ -145,8 +137,7 @@ a {
   width: 40px;
 }
 
-.element_titre
-{
+.element_titre {
   font-weight: bold;
   padding-bottom: 1%;
   height: 2%;
@@ -157,7 +148,6 @@ a {
   margin-right: 2%;
 }
 
-
 #conteneur_cartes {
   display: flex;
   padding-right: 4%;
@@ -165,7 +155,6 @@ a {
   margin-top: 2%;
   justify-content: space-between;
   background-color: #f3f3f3;
-  
   align-content: center;
 }
 
@@ -181,7 +170,6 @@ a {
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   margin-right: 2%;
   margin-bottom: 5%;
-  
 }
 
 .img_presentation {
@@ -222,7 +210,6 @@ a {
 footer {
   color: white;
   background-color: #333333;
-  
 }
 
 .conteneur_footer {
@@ -261,7 +248,6 @@ footer {
   border-radius: 50px 50px 0px 0px;
   background-color: #f3f3f3;
   margin-top: -50px;
-
 }
 
 .description_menugout {
@@ -277,10 +263,8 @@ footer {
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
-.conteneur_zonemenu
-{
+.conteneur_zonemenu {
   display: flex;
-  
 }
 
 .icone_gout {
@@ -293,6 +277,7 @@ footer {
   opacity: 0;
   color: #FF79DA;
 }
+
 .icone_cachee:hover {
   opacity: 1;
   transition: opacity 1000ms;
@@ -310,6 +295,7 @@ footer {
   color: white;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
+
 .btncommander:hover {
   background: #ff93e1;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
@@ -383,6 +369,29 @@ footer {
   font-size: 12px;
 }
 
+.progress__bar {
+  transform-origin: 0% 50%;
+  border: 1px solid black;
+  width: 50px;
+  height: 5px;
+  position: relative;
+  left: 50%;
+  top: 350px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  animation: progress-bar 3000ms 150ms;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
 
+@keyframes progress-bar {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
 
 /*# sourceMappingURL=desktop.css.map */

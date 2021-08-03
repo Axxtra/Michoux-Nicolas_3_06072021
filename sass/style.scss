@@ -9,7 +9,6 @@
     src: url('../police/Shrikhand-Regular.ttf')format('truetype');     
 }
 
-
 #entete
 {
     margin-top: 3%;
@@ -22,8 +21,6 @@
     flex-direction: row;
     padding-top: 5%;
     padding-bottom: 3%;
-    
-    
 }
 .iconecolor
 {
@@ -34,10 +31,8 @@
 {
     padding: 3%;
     margin-left: 3%;
-    margin-right: 10%;
-    
+    margin-right: 10%; 
 }
-
 
 h2
 {
@@ -59,8 +54,7 @@ body
     flex-direction: column;
     text-align: center; 
     background-color: $fond_gris ;
-    margin-top: 3%;
-    
+    margin-top: 3%; 
 }
 
 .element_recherche
@@ -68,14 +62,12 @@ body
     display: flex;
 }
 
-
 .conteneur_map
 {
     display: flex;
     justify-content: center; 
     background-color: rgb(230, 230, 230);
     padding: 3%;
-    
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3) inset;
     width: 100%;
 }
@@ -97,7 +89,6 @@ a{
     margin: 5%;
     margin-top: 10%;
     justify-content: center;
-    
 }
 
 .conteneur_recherche
@@ -123,7 +114,8 @@ a{
         color: white;
         box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 
-        &:hover {
+        &:hover 
+        {
             background : lighten($rose, 5);
             box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
         }
@@ -161,7 +153,6 @@ a{
     align-items: center;
     color: white;
     margin-left: -23%;
-    
 }
 
 .icone_navcolor
@@ -202,7 +193,6 @@ a{
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
     margin: auto;
     margin-bottom: 5%;
-   
 }
 
 .img_presentation
@@ -226,16 +216,13 @@ a{
     width: 100%;
     height: 100%;
     margin-right: 7%;
-
 }
 .conteneur_description
 {
     display: flex;
     flex-direction: column;
     margin-left: 7%;
-    justify-content: space-evenly;
-   
-    
+    justify-content: space-evenly; 
 }
 
 .titre_restaurant
@@ -247,8 +234,6 @@ a{
 {
     margin-top: 4%;
 }
-
-
 
 footer
  {
@@ -264,8 +249,7 @@ footer
     margin: 7%;
     margin-top: 0%;
     height: 100%;
-    align-content: space-between;
-    
+    align-content: space-between; 
 }
 
 .img_logo
@@ -274,7 +258,6 @@ footer
     width: 90px;
     color: white;
 }
-
 
 .conteneur_titregout
 {
@@ -287,7 +270,6 @@ footer
     
     
 }
-
 
 .conteneur_platsgout
 {
@@ -318,8 +300,7 @@ footer
     padding: 5%;
     margin: auto;
     margin-top: 7%;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
-    
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);  
 }
 
 .icone_gout
@@ -329,17 +310,17 @@ footer
 }
 
 .icone_cachee
-    {
-        margin-top: -16px;
-        opacity: 0;
-        color: $rose;
+{
+    margin-top: -16px;
+    opacity: 0;
+    color: $rose;
 
-        &:hover
-        {
-            opacity: 1;  
-            transition: opacity 1000ms;
-        }
+    &:hover
+    {
+        opacity: 1;  
+        transition: opacity 1000ms;
     }
+}
 
 .btncommander
 {
@@ -406,41 +387,69 @@ footer
         padding-top :20px;
     }
 
-    .conteneur_menugout
-    {
-        display : flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+.conteneur_menugout
+{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-evenly;
         
-    }
+}
 
-    .titre_menugout
-    {
+.titre_menugout
+{
     padding-bottom :2%;
     margin-top: 7%;
     border-bottom: 3px solid $bleu;
     width: 40px;
-    }
+}
 
-    .titre_platgout
-    {
-        font-weight: bolder;
-    }
+.titre_platgout
+{
+    font-weight: bolder;
+}
 
-    .description_platgout
-    {
-        font-size: 12px;
-    }
+.description_platgout
+{
+    font-size: 12px;
+}
 
+.bloc_page {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    text-align: justify;
+}
    
-    .bloc_page {
-        width: 100%;
-        margin: auto;
+
+.progress 
+{     
+    &__bar 
+    {
+        transform-origin: 0% 50%;
+        border : 1px solid black;
+        width: 50px;
+        height: 5px;
         position: relative;
-        text-align: justify;
+        left: 50%;
+        top: 300px;
+        background: linear-gradient(170deg, $rose, $violet );
+        animation: progress-bar 3000ms 150ms ;
+        opacity :0;
+        animation-fill-mode: forwards;
+    }   
+}
+    
+@keyframes progress-bar{
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;   
     }
-   
-   
-   
+    100% 
+    {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+    
    
     

@@ -55,6 +55,8 @@ body
     text-align: center; 
     background-color: $fond_gris ;
     margin-top: 3%; 
+    opacity: 1;
+    animation: translation 2000ms linear 150ms;
 }
 
 .element_recherche
@@ -239,7 +241,7 @@ footer
  {
     color: white;
     background-color: rgb(51, 51, 51);
-    padding-bottom: 5%;
+    padding-bottom: 7%;
  }
 
 .conteneur_footer
@@ -250,6 +252,16 @@ footer
     margin-top: 0%;
     height: 100%;
     align-content: space-between; 
+}
+
+.icone_proposition
+{
+    padding-right: 50px;
+}
+
+.lien_footer
+{
+    margin-bottom : 50px;
 }
 
 .img_logo
@@ -278,6 +290,7 @@ footer
     margin: 5%;
     margin-top: 0%;
     justify-content: center;
+    animation: translation 2000ms linear 150ms;
 }
 
 .fond_menu
@@ -420,29 +433,57 @@ footer
     text-align: justify;
 }
    
+  
+.loader
+{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    left: 42%;
+    top: 350px;
+}
 
-.progress 
-{     
-    &__bar 
-    {
-        transform-origin: 0% 50%;
-        border : 1px solid black;
-        width: 50px;
-        height: 5px;
-        position: relative;
-        left: 50%;
-        top: 300px;
-        background: linear-gradient(170deg, $rose, $violet );
-        animation: progress-bar 3000ms 150ms ;
-        opacity :0;
-        animation-fill-mode: forwards;
-    }   
+.loader-cercle
+{
+    border-radius: 50px;
+    border: 6px solid transparent;
+    
+}
+   
+
+
+.loader-cercle:after
+{
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-radius: 50px;
+    content:"";
+    border: 6px solid transparent;
+    border-top-color: $violet;
+    animation: loader-cercle 1000ms linear 150ms;
+    animation-iteration-count : 2;
+    opacity: 0; 
+    
+}
+body
+{
+   
+    
 }
     
-@keyframes progress-bar{
+@keyframes loader-cercle{
     0% {
         transform: rotate(0deg);
         opacity: 1;   
+    }
+    75%
+    {
+        transform: rotate(260deg);
+        opacity: 1; 
     }
     100% 
     {
@@ -450,6 +491,16 @@ footer
         opacity: 0;
     }
 }
-    
+
+@keyframes translation{
+    0% {
+        transform: translation(1,1);
+        opacity: 0;   
+    }
    
-    
+    100% 
+    {
+        transform: translation(2,1);
+        opacity: 1;
+    }
+}

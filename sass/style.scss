@@ -55,8 +55,7 @@ body
     text-align: center; 
     background-color: $fond_gris ;
     margin-top: 3%; 
-    opacity: 1;
-    animation: translation 2000ms linear 150ms;
+    
 }
 
 .element_recherche
@@ -291,6 +290,30 @@ footer
     margin-top: 0%;
     justify-content: center;
     animation: translation 2000ms linear 150ms;
+    
+    &::after
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes translation{
+    0% {
+        transform: translation(0,0);
+        opacity: 0;   
+    }
+
+    50%
+    {
+        transform: translation(0,-10px);
+        opacity: 1; 
+    }
+   
+    100% 
+    {
+        transform: translation(0,-20px);
+        opacity: 1;
+    }
 }
 
 .fond_menu
@@ -492,15 +515,3 @@ body
     }
 }
 
-@keyframes translation{
-    0% {
-        transform: translation(1,1);
-        opacity: 0;   
-    }
-   
-    100% 
-    {
-        transform: translation(2,1);
-        opacity: 1;
-    }
-}

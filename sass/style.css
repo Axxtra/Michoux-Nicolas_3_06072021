@@ -41,8 +41,6 @@ body p {
   text-align: center;
   background-color: #f3f3f3;
   margin-top: 3%;
-  opacity: 1;
-  animation: translation 2000ms linear 150ms;
 }
 
 .element_recherche {
@@ -245,7 +243,24 @@ footer {
   justify-content: center;
   animation: translation 2000ms linear 150ms;
 }
+.conteneur_platsgout::after {
+  opacity: 0;
+}
 
+@keyframes translation {
+  0% {
+    transform: translation(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translation(0, -10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translation(0, -20px);
+    opacity: 1;
+  }
+}
 .fond_menu {
   display: flex;
   flex-direction: column;
@@ -407,16 +422,6 @@ footer {
   100% {
     transform: rotate(360deg);
     opacity: 0;
-  }
-}
-@keyframes translation {
-  0% {
-    transform: translation(1, 1);
-    opacity: 0;
-  }
-  100% {
-    transform: translation(2, 1);
-    opacity: 1;
   }
 }
 

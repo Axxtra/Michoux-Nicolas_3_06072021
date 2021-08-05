@@ -309,10 +309,10 @@ footer
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 75vw;
+    width: 85vw;
     border-radius: 15px 15px 15px 15px;
     margin-top: 7%;
-    margin:5%;
+    margin:3%;
     height: 50px;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);  
     animation: translation 2000ms linear 250ms;
@@ -469,12 +469,14 @@ footer
 .titre_platgout
 {
     font-weight: bolder;
+    font-size: 14px;
     
 }
 
 .description_platgout
 {
     font-size: 12px;
+    font-size: 14px;
 }
 
 .bloc_page {

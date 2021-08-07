@@ -74,8 +74,7 @@ body p
   margin-left: 2%;
 }
   
-.icone_map 
-{
+.icone_map {
   margin-right: 3%; 
 }
   
@@ -106,7 +105,8 @@ a
   padding-bottom: 50px;
 }
   
-.conteneur_recherche .ancre_recherche {
+.conteneur_recherche .ancre_recherche, .btn_commander
+{
   border-radius: 50px 50px 50px 50px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   width: 50px;
@@ -128,10 +128,10 @@ a
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 15vw;
+  width: 25vw;
   border-radius: 20px 20px 20px 20px;
   padding: 1%; 
-  margin-top: 2%;
+  margin-top: 7%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 }
   
@@ -177,7 +177,7 @@ a
   display: flex;
   padding-right: 4%;
   margin-bottom: 0%;
-  margin-top: 2%;
+  margin-top: 7%;
   justify-content: space-between;
   background-color: #f3f3f3; 
   align-content: center;
@@ -187,12 +187,12 @@ a
 {
   display: flex;
   flex-direction: column;
-  width: 15vw;
+  width: 20vw;
   height: 250px;
   border-radius: 13px 13px 13px 13px;
   border: #F2F2F2 1px solid;
   margin-bottom: 7%;
-  margin-top: 3%;
+  margin-top: 25%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   margin-right: 2%;
   margin-bottom: 5%; 
@@ -244,6 +244,7 @@ footer
   color: white;
   background-color: rgb(51, 51, 51);
   padding-bottom: 7%;
+  margin-top: 5%;
     
 }
 
@@ -256,7 +257,7 @@ footer
 
 .icone_proposition
 {
-  padding-right: 1%;
+  padding-right: 3%;
 }
 
 .icone_partenaire
@@ -271,10 +272,9 @@ footer
 
 .lien_footer
 {
-  margin-bottom : 1%;
+  margin-bottom : 3%;
   margin-left: 5%;
 }
-
 
 .img_logo 
 {
@@ -289,7 +289,6 @@ footer
   font-family: "Police", cursive;
   justify-content: space-between;
   margin-left: 10%;
-  margin-right: 12%;
   margin-top: 6%;
   width: 50vw;
 }
@@ -298,9 +297,8 @@ footer
 {
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
-  margin-top: 0%;
-  margin: auto; 
+  
+  
 }
   
 .fond_menu 
@@ -309,19 +307,21 @@ footer
   flex-direction: column;
   border-radius: 50px 50px 0px 0px;
   background-color: #f3f3f3;
-}
   
+}
+
+
+
 .description_menugout
 {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 20vw;
-  height: 80px;
+  width: 27VW;
+  height: 50px;
   border-radius: 15px 15px 15px 15px;
-  margin-left:  1%;
-  margin-top: 7%;
+  margin: auto;
+  margin-top: 10%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -337,15 +337,23 @@ footer
   display: none;
 }
 
-.description_menugout:hover .element_cache
+.description_menugout:active .element_cache
 {
-  display: flex;
+    display: flex;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
+
+
   
 .conteneur_zonemenu
 {
   display: flex;  
+  flex-wrap: wrap;
+  width: 100vw; 
 }
+
   
 .icone_gout 
 {
@@ -403,6 +411,7 @@ footer
   margin :4%;
   margin-left: 0%;
   margin-right: 2%;
+  font-size: 8px;
 }
   
 .conteneur_menugout {
@@ -417,6 +426,7 @@ footer
   padding-bottom: 1%;
   height: 2%;
   margin-top: 2%;
+  margin-left: 2%;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
 }
@@ -425,12 +435,12 @@ footer
 {
   font-weight: bolder;
   margin-top: 2%;
-  font-size: 14px;
+  font-size: 10px;
 }
   
 .description_platgout 
 {
-  font-size: 12px;
+  font-size: 8px;
 }
   
 .loader
@@ -492,39 +502,49 @@ body
 
 
 
-@keyframes fade 
-{
-0% 
-{
-  opacity:0;   
-}
-75%
-{
-  opacity: 0.5; 
-}
-100% 
-{
-  opacity: 1;
-}
-}
+@keyframes fade {
+    0% 
+    {
+        opacity:0;   
+    }
+    75%
+    {
+        opacity: 0.5; 
+    }
+    100% 
+    {
+        opacity: 1;
+    }
+  }
 
 
-.description_menugout
-{
-  animation: taille 1000ms 150ms ease-in;
+  .animation_apparition1
+  {
+      animation: taille 1000ms 150ms ease-in;
       
-}
- 
-@keyframes taille 
-{
-0%  
-{
-  transform: scale(.5);
+  }
+  .animation_apparition2
+  {
+      animation: taille 1000ms 250ms ease-in;
+      
+  }
+  .animation_apparition3
+  {
+      animation: taille 1000ms 350ms ease-in;
+      
+  }
+
+
+
+  @keyframes taille {
+    0%  
+    {
+        transform: scale(.5);
         
-}
-100% 
-{
-  transform: scale(1);
+    }
+    100% 
+    {
+        transform: scale(1);
         
-}
-}
+    }
+  }

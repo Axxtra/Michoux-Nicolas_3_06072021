@@ -6,7 +6,8 @@
         
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" media="screen and (max-width: 576px)" href="sass/style.css" />
-        <link rel="stylesheet" media="screen and (min-width: 768px)"href="sass/desktop.css" />
+        <link rel="stylesheet" media="screen and (min-width: 1024px)" href="sass/desktop.css" />
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="sass/tablett.css" />
         <title>Ohmyfood</title>
         <script src="https://kit.fontawesome.com/d55ef477fb.js" crossorigin="anonymous"></script>
     </head>
@@ -18,125 +19,130 @@
             </div>
         </header>
         
-        <section>
-            <div class="conteneur_imgpresentation"></div>
-        </section>
-
+        <div class="conteneur_imgpresentation"></div>
 
         <section>
             <div class="fond_menu">
                 
                 <div class="conteneur_titregout">
-                    <div class="h1_gout"><h1>La palette du goût</div>
-                    <div class="icone_gout"><i class="far fa-heart"><div class="icone_cachee"><i class="fas fa-heart"></i></div></i></div>
+                    <div class="h1_gout"><h1>La palette du goût</h1></div>
+                    <div class="icone_gout"><i class="far fa-heart"></i><div class="icone_cachee"><i class="fas fa-heart"></i></div></div>
                 </div>
 
             <div class="conteneur_platsgout">
                 <div class="conteneur_zonemenu">
-                <div class="titre_menugout">ENTREES</div>
+                    <div class="titre_menugout">ENTREES</div>
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Fricassées d'escargot</div>
-                        <div class="description_platgout">Et ses copeaux de truffe noire</div>
-                    </div>
-                    <div class="prix_platgout"><strong>25&euro;</strong></div>
-                    <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div>  
-                </div> 
-                
+                    
+                    <div class="description_menugout"> 
+                        <div class="conteneur_menugout">   
+                            <div class="titre_platgout">Fricassées d'escargot</div>
+                            <div class="description_platgout">Et ses copeaux de truffe noire</div>
+                        </div>
+                        <div class="prix_platgout"><strong>25&euro;</strong></div>
+                        <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div>  
+                    </div> 
+                    
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Fois gras de canard mi-cuit</div>
-                        <div class="description_platgout">Au piment d'espelette</div>
-                    </div>
-                    <div class="prix_platgout"><strong>35&euro;</strong></div>
-                    <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
-                </div> 
+                    
+                    <div class="description_menugout"> 
+                        <div class="conteneur_menugout">   
+                            <div class="titre_platgout">Fois gras de canard mi-cuit</div>
+                            <div class="description_platgout">Au piment d'espelette</div>
+                        </div>
+                        <div class="prix_platgout"><strong>35&euro;</strong></div>
+                        <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                    </div> 
+                    
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Oeuf au plat</div>
-                        <div class="description_platgout">Assaisonné à la truffe sur lit de caviar</div>
-                    </div>
-                    <div class="prix_platgout"><strong>20&euro;</strong></div>
-                    <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
-                </div> 
-            </div>
-            <div class="conteneur_zonemenu">
-                <div class="titre_menugout">PLATS</div>
+                    
+                    <div class="description_menugout"> 
+                        <div class="conteneur_menugout">   
+                            <div class="titre_platgout">Oeuf au plat</div>
+                            <div class="description_platgout">Assaisonné à la truffe sur lit de caviar</div>
+                        </div>
+                        <div class="prix_platgout"><strong>20&euro;</strong></div>
+                        <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                    </div> 
+                </div>   
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Filet de boeuf aux herbes</div>
-                        <div class="description_platgout">Accompagné de sa ribambelle de légumes</div>
-                    </div>
-                    <div class="prix_platgout"><strong>40&euro;</strong></div>
-                    <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
-                </div> 
+                <div class="conteneur_zonemenu">
+                    <div class="titre_menugout">PLATS</div>
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Parmentier de queue de boeuf</div>
-                        <div class="description_platgout">À la truffe noire sur sa purée de panais</div>
-                    </div>
-                    <div class="prix_platgout"><strong>35&euro;</strong></div>
-                    <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
-                </div> 
+                    <div class="description_menugout"> 
+                        <div class="conteneur_menugout">   
+                            <div class="titre_platgout">Filet de boeuf aux herbes</div>
+                            <div class="description_platgout">Accompagné de sa ribambelle de légumes</div>
+                        </div>
+                        <div class="prix_platgout"><strong>40&euro;</strong></div>
+                        <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                    </div> 
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Filet de turbot</div>
-                        <div class="description_platgout">Aux agrumes</div>
-                    </div>
-                    <div class="prix_platgout"><strong>44&euro;</strong></div>
-                    <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
-                </div> 
-            </div>
-            <div class="conteneur_zonemenu">
-                <div class="titre_menugout">DESSERTS</div>
+                    <div class="description_menugout"> 
+                        <div class="conteneur_menugout">   
+                            <div class="titre_platgout">Parmentier de queue de boeuf</div>
+                            <div class="description_platgout">À la truffe noire sur sa purée de panais</div>
+                        </div>
+                        <div class="prix_platgout"><strong>35&euro;</strong></div>
+                        <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                    </div> 
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Paris-Brest</div>
-                        <div class="description_platgout">Revisité</div>
-                    </div>
-                    <div class="prix_platgout"><strong>18&euro;</strong></div>
-                    <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
-                </div> 
-
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Macaron au chocolat d'exception</div>
-                        <div class="description_platgout">Et glace à la vanille de Madagascar</div>
-                    </div>
-                    <div class="prix_platgout"><strong>22&euro;</strong></div>
-                    <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
-                </div> 
-
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Mousse au chocolat</div>
-                        <div class="description_platgout">Au piment d'Espelette et à la truffe noire</div>
-                    </div>
-                    <div class="prix_platgout"><strong>23&euro;</strong></div>
-                    <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                    <div class="description_menugout"> 
+                        <div class="conteneur_menugout">   
+                            <div class="titre_platgout">Filet de turbot</div>
+                            <div class="description_platgout">Aux agrumes</div>
+                        </div>
+                        <div class="prix_platgout"><strong>44&euro;</strong></div>
+                        <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                    </div> 
                 </div>
-            </div>
+
+                <div class="conteneur_zonemenu">
+                    <div class="titre_menugout">DESSERTS</div>
+
+                    <div class="description_menugout"> 
+                        <div class="conteneur_menugout">   
+                            <div class="titre_platgout">Paris-Brest</div>
+                            <div class="description_platgout">Revisité</div>
+                        </div>
+                        <div class="prix_platgout"><strong>18&euro;</strong></div>
+                        <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                    </div> 
+
+                    <div class="description_menugout"> 
+                        <div class="conteneur_menugout">   
+                            <div class="titre_platgout">Macaron au chocolat d'exception</div>
+                            <div class="description_platgout">Et glace à la vanille de Madagascar</div>
+                        </div>
+                        <div class="prix_platgout"><strong>22&euro;</strong></div>
+                        <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                    </div> 
+
+                    <div class="description_menugout"> 
+                        <div class="conteneur_menugout">   
+                            <div class="titre_platgout">Mousse au chocolat</div>
+                            <div class="description_platgout">Au piment d'Espelette et à la truffe noire</div>
+                        </div>
+                        <div class="prix_platgout"><strong>23&euro;</strong></div>
+                        <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                    </div>
+                </div>
+
                 <div class="btn_commander">
                     <a href="#" class="btncommander">Commander</a>
                 </div>
             </div>
             </div>
         </section>  
-    </body>
+        
         <footer>
             <div class="conteneur_footer">
                 <div class="logo_footer"><h2>Ohmyfood</h2></div>
-                <div class="conteneur_proposition"><i class="fas fa-utensils"></i> Proposer un restaurant</div>
-                <div class="conteneur_partenaire"><i class="fas fa-hands-helping"></i> Devenir partenaire</div>
-                <div class="conteneur_mentions">Mentions légales</div>
-                <div class="conteneur_contact">Contact</div>
+                <div class="lien_footer"><span class="icone_proposition"><i class="fas fa-utensils"></i></span> Proposer un restaurant</div>
+                <div class="lien_footer"><span class="icone_partenaire"><i class="fas fa-hands-helping"></i></span> Devenir partenaire</div>
+            <div class="lien_footer">Mentions légales</div>
+                <div class="lien_footer">Contact</div>
             </div>
-        </footer>      
+        </footer> 
+    </body>    
 </html>

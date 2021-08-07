@@ -6,7 +6,8 @@
         
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" media="screen and (max-width: 576px)" href="sass/style.css" />
-        <link rel="stylesheet" media="screen and (min-width: 768px)"href="sass/desktop.css" />
+        <link rel="stylesheet" media="screen and (min-width: 1024px)" href="sass/desktop.css" />
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="sass/tablett.css" />
         <title>Ohmyfood</title>
         <script src="https://kit.fontawesome.com/d55ef477fb.js" crossorigin="anonymous"></script>
     </head>
@@ -18,17 +19,13 @@
             </div>
         </header>
 
-    
-        <section>
-            <div class="conteneur_imgpresentation2"></div>
-        </section>
-
-
+        <div class="conteneur_imgpresentation2"></div>
+        
         <section>
             <div class="fond_menu">
                 <div class="conteneur_titregout">
-                    <div class="h1_gout"><h1>La note enchantée</div>
-                    <div class="icone_gout"><i class="far fa-heart"><div class="icone_cachee"><i class="fas fa-heart"></i></div></i></div>
+                    <div class="h1_gout"><h1>La note enchantée</h1></div>
+                    <div class="icone_gout"><i class="far fa-heart"></i><div class="icone_cachee"><i class="fas fa-heart"></i></div></div>
                 </div>
                
 
@@ -138,14 +135,15 @@
             </div>
             </div>
         </section>  
-    </body>
+    
         <footer>
             <div class="conteneur_footer">
                 <div class="logo_footer"><h2>Ohmyfood</h2></div>
-                <div class="conteneur_proposition"><i class="fas fa-utensils"></i> Proposer un restaurant</div>
-                <div class="conteneur_partenaire"><i class="fas fa-hands-helping"></i> Devenir partenaire</div>
-                <div class="conteneur_mentions">Mentions légales</div>
-                <div class="conteneur_contact">Contact</div>
+                <div class="lien_footer"><span class="icone_proposition"><i class="fas fa-utensils"></i></span> Proposer un restaurant</div>
+                <div class="lien_footer"><span class="icone_partenaire"><i class="fas fa-hands-helping"></i></span> Devenir partenaire</div>
+                <div class="lien_footer">Mentions légales</div>
+                <div class="lien_footer">Contact</div>
             </div>
-        </footer>      
+        </footer>
+    </body>    
 </html>

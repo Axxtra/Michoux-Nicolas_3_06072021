@@ -329,17 +329,51 @@ footer
 {
   background-color: $bleu;
   height: 100%;
-  width: 50px;
+  width: 15%;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   justify-content: center;
   align-items: center;  
+  position : relative;
+  right: -50px;
   display: none;
+  margin: 0%;
 }
+
+
+@keyframes decalage
+{
+  0%
+  {
+    transform: translate(0px,0px);
+    opacity: 0;
+  }
+  50%
+  {
+    transform: translate(-25px,0px);
+    opacity:0;
+  }
+  75%
+  {
+    transform: translate(-37px,0px);
+    opacity:1;
+  }
+  
+  100%
+  {
+    transform: translate(-50px,0px);
+    opacity:1;
+  }
+
+}
+
 
 .description_menugout:hover .element_cache
 {
+  animation: decalage 500ms forwards ease;
   display: flex;
+  overflow: hidden;
+  
 }
   
 .conteneur_zonemenu

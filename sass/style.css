@@ -24,9 +24,13 @@
   margin-right: 10%;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-weight: bolder;
   font-size: 17px;
+}
+
+h1 {
+  text-align: center;
 }
 
 body {
@@ -46,6 +50,7 @@ body p {
 
 .element_recherche {
   display: flex;
+  justify-content: center;
 }
 
 .conteneur_map {
@@ -275,9 +280,19 @@ footer {
   margin: 3%;
   height: 50px;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  animation: taille 1000ms backwards;
 }
-.description_menugout::after {
-  opacity: 1;
+.description_menugout--1 {
+  animation-delay: 333ms;
+}
+.description_menugout--2 {
+  animation-delay: 666ms;
+}
+.description_menugout--3 {
+  animation-delay: 999ms;
+}
+.description_menugout--4 {
+  animation-delay: 1332ms;
 }
 
 .icone_gout {
@@ -293,20 +308,8 @@ footer {
   padding-left: 2%;
   padding-top: 2%;
   position: absolute;
-  bottom: -35%;
-  left: 65%;
-}
-
-.nouveau2 {
-  height: 25px;
-  width: 70px;
-  background-color: #99E2D0;
-  color: black;
-  padding-left: 2%;
-  padding-top: 2%;
-  position: absolute;
-  top: 171%;
-  left: 65%;
+  margin-top: 3%;
+  right: 10%;
 }
 
 .icone_cachee {
@@ -385,18 +388,30 @@ footer {
 .element_cache {
   background-color: #99E2D0;
   height: 100%;
-  width: 50px;
+  width: 15%;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  right: -20px;
   display: none;
+  margin: 0%;
 }
 
+@keyframes decalage {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-20px, 0px);
+    opacity: 1;
+  }
+}
 .description_menugout:active .element_cache {
+  animation: decalage 1000ms forwards ease;
   display: flex;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
 }
 
@@ -418,7 +433,6 @@ footer {
 
 .description_platgout {
   font-size: 12px;
-  font-size: 14px;
 }
 
 .bloc_page {
@@ -475,6 +489,14 @@ body {
   animation: fade 3000ms;
 }
 
+@keyframes taille {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes fade {
   0% {
     opacity: 0;
@@ -484,18 +506,6 @@ body {
   }
   100% {
     opacity: 1;
-  }
-}
-.description_menugout {
-  animation: taille 1000ms 150ms ease-in;
-}
-
-@keyframes taille {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 

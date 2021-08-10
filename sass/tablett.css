@@ -30,10 +30,6 @@
   margin-right: 10%;
 }
 
-h2 {
-  font-family: "Police", cursive;
-}
-
 body {
   margin: 0%;
 }
@@ -58,7 +54,6 @@ body p {
   width: 20vw;
   height: 12px;
   border-radius: 20px 20px 20px 20px;
-  margin-left: 2%;
 }
 
 .icone_map {
@@ -73,7 +68,7 @@ a {
 .conteneur_navigation {
   display: flex;
   justify-content: space-between;
-  margin: 2%;
+  margin: 1%;
   margin-right: 4%;
 }
 
@@ -81,6 +76,13 @@ a {
   display: flex;
   flex-direction: column;
   margin-bottom: 4%;
+  align-content: center;
+}
+
+.element_recherche:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
 }
 
 .conteneur_recherche .fond_recherche {
@@ -88,7 +90,7 @@ a {
   padding-bottom: 50px;
 }
 
-.conteneur_recherche .ancre_recherche, .btn_commander {
+.conteneur_recherche .ancre_recherche {
   border-radius: 50px 50px 50px 50px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   width: 50px;
@@ -107,11 +109,11 @@ a {
 .element_nav, .element_nav2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 25vw;
+  justify-content: space-between;
+  width: 15vw;
   border-radius: 20px 20px 20px 20px;
   padding: 1%;
-  margin-top: 7%;
+  margin-top: 10%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -129,29 +131,28 @@ a {
 
 .titre_nav {
   font-weight: bold;
-  padding-bottom: 1%;
   height: 2%;
   margin-top: 1%;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
+  margin-right: 2%;
 }
 
 .element_titre {
   font-weight: bold;
-  padding-bottom: 1%;
   height: 2%;
   margin-top: 1%;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
-  margin-left: 2%;
+  margin-left: 1%;
   margin-right: 2%;
 }
 
 #conteneur_cartes {
   display: flex;
-  padding-right: 4%;
+  padding-right: 2%;
   margin-bottom: 0%;
-  margin-top: 7%;
+  margin-top: 2%;
   justify-content: space-between;
   background-color: #f3f3f3;
   align-content: center;
@@ -160,15 +161,16 @@ a {
 .conteneur_restaurant {
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  width: 15vw;
   height: 250px;
   border-radius: 13px 13px 13px 13px;
   border: #F2F2F2 1px solid;
   margin-bottom: 7%;
-  margin-top: 25%;
+  margin-top: 50%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
-  margin-right: 2%;
+  margin-right: 1%;
   margin-bottom: 5%;
+  margin-left: 2%;
 }
 
 .img_presentation {
@@ -207,10 +209,10 @@ a {
 }
 
 footer {
+  margin-top: 7%;
   color: white;
   background-color: #333333;
-  padding-bottom: 7%;
-  margin-top: 5%;
+  padding-bottom: 9%;
 }
 
 .conteneur_footer {
@@ -220,15 +222,19 @@ footer {
 }
 
 .icone_proposition {
-  padding-right: 3%;
+  padding-right: 1%;
 }
 
 .icone_partenaire {
   padding-right: 1%;
 }
 
+.logo_footer {
+  font-family: "Police", cursive;
+}
+
 .lien_footer, .logo_footer {
-  margin-bottom: 3%;
+  margin-bottom: 1%;
   margin-left: 5%;
 }
 
@@ -243,6 +249,7 @@ footer {
   font-family: "Police", cursive;
   justify-content: space-between;
   margin-left: 10%;
+  margin-right: 12%;
   margin-top: 6%;
   width: 50vw;
 }
@@ -250,6 +257,8 @@ footer {
 .conteneur_platsgout {
   display: flex;
   flex-direction: column;
+  margin-top: 0%;
+  width: 100%;
 }
 
 .fond_menu {
@@ -261,52 +270,87 @@ footer {
 
 .description_menugout {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 27VW;
-  height: 50px;
+  width: 13%;
+  min-width: 290px;
+  height: 80px;
   border-radius: 15px 15px 15px 15px;
-  margin: auto;
-  margin-top: 10%;
+  margin-left: 1%;
+  margin-top: 7%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  animation: taille 1000ms backwards;
+}
+.description_menugout--1 {
+  animation-delay: 333ms;
+}
+.description_menugout--2 {
+  animation-delay: 666ms;
+}
+.description_menugout--3 {
+  animation-delay: 999ms;
+}
+.description_menugout--4 {
+  animation-delay: 1332ms;
 }
 
 .element_cache {
   background-color: #99E2D0;
   height: 100%;
-  width: 50px;
+  width: 10%;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  right: -20px;
   display: none;
+  margin: 0%;
 }
 
+@keyframes decalage {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-17px, 0px);
+    opacity: 1;
+  }
+}
 .description_menugout:active .element_cache {
+  animation: decalage 500ms forwards ease;
   display: flex;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .conteneur_zonemenu {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
+  justify-content: space-around;
+}
+
+h1, h2, h3 {
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+h1 {
+  text-align: center;
 }
 
 .icone_gout {
-  padding-top: 27px;
+  padding-top: 26px;
   margin-left: 4%;
 }
 
 .icone_cachee {
-  margin-top: -16px;
+  margin-top: -23.5px;
   opacity: 0;
   color: #FF79DA;
 }
 
-.icone_cachee:hover {
+.icone_cachee:active {
   opacity: 1;
   transition: opacity 1000ms;
 }
@@ -343,7 +387,6 @@ footer {
   margin: 4%;
   margin-left: 0%;
   margin-right: 2%;
-  font-size: 8px;
 }
 
 .conteneur_menugout {
@@ -357,7 +400,6 @@ footer {
   padding-bottom: 1%;
   height: 2%;
   margin-top: 2%;
-  margin-left: 2%;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
 }
@@ -365,11 +407,11 @@ footer {
 .titre_platgout {
   font-weight: bolder;
   margin-top: 2%;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .description_platgout {
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .loader {
@@ -429,25 +471,24 @@ body {
     opacity: 1;
   }
 }
-.animation_apparition1 {
-  animation: taille 1000ms 150ms ease-in;
-}
-
-.animation_apparition2 {
-  animation: taille 1000ms 250ms ease-in;
-}
-
-.animation_apparition3 {
-  animation: taille 1000ms 350ms ease-in;
-}
-
 @keyframes taille {
   0% {
-    transform: scale(0.5);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
   }
+}
+.nouveau {
+  height: 25px;
+  width: 70px;
+  background-color: #99E2D0;
+  color: black;
+  padding: 5px;
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 15px;
+  bottom: 3%;
 }
 
 /*# sourceMappingURL=tablett.css.map */

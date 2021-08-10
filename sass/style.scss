@@ -596,19 +596,7 @@ body
     animation: fade 3000ms;
 }
  
-  @keyframes taille 
-  {
-    0%  
-    {
-        transform: scale(.5);
-        
-    }
-    100% 
-    {
-        transform: scale(1);
-        
-    }
-  }
+
 
   @keyframes fade {
     0% 
@@ -624,3 +612,18 @@ body
         opacity: 1;
     }
   }
+
+
+  @keyframes taille 
+{
+  0%  
+  {
+    opacity: 0;
+      
+  }
+  100% 
+  {
+    opacity: 1;
+      
+  }
+}

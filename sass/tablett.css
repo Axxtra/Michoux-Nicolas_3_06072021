@@ -60,7 +60,6 @@ body p {
   padding: 1%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3) inset;
   width: 20vw;
-  height: 12px;
   border-radius: 20px 20px 20px 20px;
 }
 
@@ -118,9 +117,9 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 15vw;
+  width: 25vw;
   border-radius: 20px 20px 20px 20px;
-  padding: 1%;
+  padding: 2%;
   margin-top: 10%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 }
@@ -169,7 +168,8 @@ a {
 .conteneur_restaurant {
   display: flex;
   flex-direction: column;
-  width: 15vw;
+  position: relative;
+  width: 20vw;
   height: 250px;
   border-radius: 13px 13px 13px 13px;
   border: #F2F2F2 1px solid;
@@ -495,12 +495,12 @@ body {
   height: 25px;
   width: 70px;
   background-color: #99E2D0;
-  color: black;
+  color: #072712;
   padding: 5px;
   position: absolute;
-  margin-top: 3%;
-  margin-left: 15px;
-  bottom: 3%;
+  top: 2%;
+  right: 2%;
+  border-radius: 5px 5px 5px 5px;
 }
 
 /*# sourceMappingURL=tablett.css.map */

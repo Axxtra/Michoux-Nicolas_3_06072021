@@ -165,6 +165,7 @@ a {
 .conteneur_restaurant {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 15vw;
   height: 250px;
   border-radius: 13px 13px 13px 13px;
@@ -354,7 +355,18 @@ h1 {
   color: #FF79DA;
 }
 
+.icone_cacheeaccueil {
+  margin-top: -19px;
+  opacity: 0;
+  color: #FF79DA;
+}
+
 .icone_cachee:hover {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+.icone_cacheeaccueil:hover {
   opacity: 1;
   transition: opacity 1000ms;
 }
@@ -487,12 +499,12 @@ body {
   height: 25px;
   width: 70px;
   background-color: #99E2D0;
-  color: black;
-  padding: 5px;
+  color: #072712;
+  padding: 1%;
   position: absolute;
-  margin-top: 3%;
-  margin-left: 15px;
-  bottom: 12%;
+  top: 2%;
+  right: 2%;
+  border-radius: 5px 5px 5px 5px;
 }
 
 /*# sourceMappingURL=desktop.css.map */

@@ -165,6 +165,7 @@ a {
 .conteneur_restaurant {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 87vw;
   height: 250px;
   border-radius: 13px 13px 13px 13px;
@@ -310,12 +311,12 @@ footer {
   height: 25px;
   width: 70px;
   background-color: #99E2D0;
-  color: black;
-  padding-left: 2%;
-  padding-top: 2%;
+  color: #072712;
+  padding: 1%;
   position: absolute;
-  margin-top: 3%;
-  right: 10%;
+  top: 2%;
+  right: 2%;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .icone_cachee {

@@ -52,23 +52,19 @@ h1
 
 body
 {
+    animation: fade 3000ms;
     font-family: "Roboto", cursive;
     margin: 0%;
+    
     p
     {
-        margin: 2%;
+        margin: 1%;
+        text-align: center;
+        margin-bottom: 4%;
     }
 }
 
-.conteneur_recherche
-{
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
-    background-color: $fond_gris ;
-    margin-top: 3%; 
-    
-}
+
 
 .element_recherche
 {
@@ -109,7 +105,9 @@ a{
 {
     display: flex;
     flex-direction: column;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    
     
     .fond_recherche
     {
@@ -123,8 +121,8 @@ a{
         @include mixingradient;
         width: 200px;
         padding: 3%;
-        margin: auto;
-        margin-top: 4%; 
+        text-align: center;
+        margin-top: 1%; 
         color: white;
         box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 
@@ -374,8 +372,9 @@ footer
     height: 25px;
     width: 70px;
     background-color: $bleu;
-    color: rgb(7, 39, 18);
-    padding: 1%;
+    color: rgb(5, 56, 23);
+    padding-left: 2%;
+    padding-top: 2%;
     position: absolute;
     top : 2%;
     right : 2%;
@@ -394,6 +393,13 @@ footer
         transition: opacity 1000ms;
         
     }
+}
+
+.icone_cacheeaccueil 
+{
+    margin-top: -19px;
+    opacity: 0;
+    color: #FF79DA; 
 }
 
 .btncommander
@@ -527,6 +533,7 @@ footer
 {
     font-weight: bolder;
     font-size: 14px;
+    text-overflow: ellipsis;
     
     
 }
@@ -534,7 +541,7 @@ footer
 .description_platgout
 {
     font-size: 12px;
-    
+    text-overflow: ellipsis;
 }
 
 .bloc_page {
@@ -550,9 +557,10 @@ footer
     width: 50px;
     height: 50px;
     display: inline-block;
-    position: relative;
+    position: absolute;
     left: 42%;
     top: 350px;
+    margin: 0%;
 }
 
 .loader-cercle
@@ -599,13 +607,6 @@ footer
         opacity: 0;
     }
 }
-
-body
-{
-    animation: fade 3000ms;
-}
- 
-
 
   @keyframes fade {
     0% 

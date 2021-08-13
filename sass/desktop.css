@@ -7,7 +7,7 @@
   src: url("../police/Roboto-Regular.ttf") format("truetype");
 }
 #entete {
-  margin-top: 3%;
+  margin-top: 1%;
   text-align: center;
 }
 
@@ -43,9 +43,9 @@ body p {
 }
 
 .conteneur_recherche {
+  margin: 0%;
   display: flex;
   text-align: center;
-  margin-top: 3%;
   width: 100%;
 }
 
@@ -100,7 +100,7 @@ a {
   width: 50px;
   padding: 1%;
   margin: 1%;
-  margin-top: 4%;
+  margin-top: 1%;
   color: white;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
@@ -263,6 +263,7 @@ footer {
   flex-direction: column;
   margin-left: 1%;
   margin-top: 0%;
+  margin-bottom: 0%;
   width: 100%;
 }
 
@@ -499,8 +500,9 @@ body {
   height: 25px;
   width: 70px;
   background-color: #99E2D0;
-  color: #072712;
-  padding: 1%;
+  color: #053817;
+  padding-left: 2%;
+  padding-top: 2%;
   position: absolute;
   top: 2%;
   right: 2%;

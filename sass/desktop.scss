@@ -246,6 +246,7 @@ a
 .note_restaurant 
 {
   margin-top: 4%;
+  margin-right: 3%;
 }
   
 footer
@@ -344,6 +345,11 @@ footer
           }
 }
 
+.description_menugout:nth-child(5)
+{
+  margin-right: -5%;
+}
+
 
 
   .element_cache
@@ -388,13 +394,14 @@ footer
 .conteneur_zonemenu
 {
   display: flex;  
-  
+  margin-left: 3%;
   justify-content:space-between;
-  margin-right: 3%;
-  margin-left: 2%;
-  
+  margin-right: 10%;
   
 }
+
+
+
 h1, h2, h3
 {
     font-weight: bolder;
@@ -492,7 +499,6 @@ h1
   margin-top: 2%;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
-  margin-left: 0%;
 }
   
 .titre_platgout 

@@ -341,10 +341,11 @@ footer
 .description_menugout
 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    
     justify-content: space-between;
     width: 85vw;
+    overflow: hidden;
+    position: relative;
     border-radius: 15px 15px 15px 15px;
     margin-top: 7%;
     margin:3%;
@@ -464,63 +465,66 @@ footer
 
 .prix_platgout
 {
-    padding-top :15px;
-    margin-right: 1%; 
-    
-        
+  
+    align-self: flex-end;
+    position: absolute;
+    font-weight: 500;
+    right: 1.2rem;
+    margin-bottom: 0.7rem;
+    transition: transform 0.8s
 }
 
 .conteneur_menugout
 {
-    display : flex;
-    flex-direction: column;
-    margin :3%;
+    width: 75%;
+    margin-left: 0.8rem;
+    line-height: 1.5rem;
+    transition: width 0.8s;
       
 }
 
 .element_cache
 {
-  background-color: $bleu;
-  height: 50px;
-  width: 15%;
-  border-radius: 0px 15px 15px 0px;
-  display:block;
-  justify-content: center;
-  align-items: center;  
-  right: -20px;
-  display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    right: -60px;
+    background-color: #99E2D0;
+    transition: transform 0.8s;
 }
 
+.element_cache .fas {
 
-@keyframes decalage
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #99E2D0;
+    transition: transform 1s;
+}
+
+.description_menugout:active .element_cache,
+.description_menugout:active .prix_platgout 
 {
-  0%
-  {
-    transform: translate(0px,0px);
-    opacity: 0;
-  }
-  100%
-  {
-    transform: translate(-20px,0px);
-    opacity:1;
-  }
+    transform: translateX(-60px);
 }
 
-
-
-.description_menugout:active .element_cache
+.description_menugout:active .conteneur_menugout 
 {
-  animation: decalage 1000ms forwards ease;
-  display: flex;
-  
+    width: calc(75% - 60px);
 }
 
-.description_menugout:active .prix_platgout
+.description_menugout:active .fas 
 {
-  animation: decalage 1000ms forwards ease;
-  display: flex;
+    transform: rotate(360deg);
 }
-
 
   
 .icone_selection
@@ -538,21 +542,21 @@ footer
 
 .titre_platgout
 {
-    font-weight: bolder;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 14px;
-    
-    
+    font-weight: 500;  
     
 }
 
 .description_platgout
 {
-    font-size: 14px;
     white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    
-    
-    
+    font-weight: 300;
+    font-size: 12px;
 }
 
 .bloc_page {

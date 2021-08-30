@@ -398,16 +398,14 @@ footer {
 
 .element_cache {
   background-color: #99E2D0;
-  height: 100%;
+  height: 50px;
   width: 15%;
   border-radius: 0px 15px 15px 0px;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
-  position: relative;
   right: -20px;
   display: none;
-  margin: 0%;
 }
 
 @keyframes decalage {
@@ -423,7 +421,11 @@ footer {
 .description_menugout:active .element_cache {
   animation: decalage 1000ms forwards ease;
   display: flex;
-  overflow: hidden;
+}
+
+.description_menugout:active .prix_platgout {
+  animation: decalage 1000ms forwards ease;
+  display: flex;
 }
 
 .icone_selection {
@@ -440,11 +442,11 @@ footer {
 .titre_platgout {
   font-weight: bolder;
   font-size: 14px;
-  text-overflow: ellipsis;
 }
 
 .description_platgout {
-  font-size: 12px;
+  font-size: 14px;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 

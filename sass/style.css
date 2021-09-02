@@ -1,6 +1,10 @@
 @font-face {
-  font-family: "Police";
+  font-family: "Shrikhand";
   src: url("../police/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../police/Roboto-Regular.ttf") format("truetype");
 }
 #entete {
   margin-top: 3%;
@@ -24,27 +28,29 @@
   margin-right: 10%;
 }
 
-h2 {
-  font-family: "Police", cursive;
+h1, h2, h3 {
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+h1 {
+  text-align: center;
 }
 
 body {
+  animation: fade 3000ms;
+  font-family: "Roboto", cursive;
   margin: 0%;
 }
 body p {
-  margin: 2%;
-}
-
-.conteneur_recherche {
-  display: flex;
-  flex-direction: column;
+  margin: 1%;
   text-align: center;
-  background-color: #f3f3f3;
-  margin-top: 3%;
+  margin-bottom: 4%;
 }
 
 .element_recherche {
   display: flex;
+  justify-content: center;
 }
 
 .conteneur_map {
@@ -76,7 +82,8 @@ a {
 .conteneur_recherche {
   display: flex;
   flex-direction: column;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
+  margin-top: 3%;
 }
 .conteneur_recherche .fond_recherche {
   background: #f3f3f3;
@@ -87,8 +94,8 @@ a {
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   width: 200px;
   padding: 3%;
-  margin: auto;
-  margin-top: 4%;
+  text-align: center;
+  margin-top: 1%;
   color: white;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
@@ -134,6 +141,9 @@ a {
   font-weight: bold;
   margin-top: 3%;
   margin-bottom: 3%;
+}
+
+.element_titre {
   margin-left: 5%;
 }
 
@@ -151,6 +161,7 @@ a {
 .conteneur_restaurant {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 87vw;
   height: 250px;
   border-radius: 13px 13px 13px 13px;
@@ -180,6 +191,7 @@ a {
   width: 100%;
   height: 100%;
   margin-right: 7%;
+  color: black;
 }
 
 .conteneur_description {
@@ -195,21 +207,39 @@ a {
 
 .note_restaurant {
   margin-top: 4%;
+  margin-right: 3%;
 }
 
 footer {
   color: white;
   background-color: #333333;
-  padding-bottom: 5%;
+  padding-bottom: 7%;
 }
 
 .conteneur_footer {
   display: flex;
   flex-direction: column;
-  margin: 7%;
-  margin-top: 0%;
   height: 100%;
-  align-content: space-between;
+}
+
+.icone_proposition {
+  padding-right: 3%;
+}
+
+.icone_partenaire {
+  padding-right: 1%;
+}
+
+.logo_footer {
+  font-family: "Shrikhand", cursive;
+  font-weight: bolder;
+  font-size: 18px;
+  margin-top: 2%;
+}
+
+.lien_footer, .logo_footer {
+  margin-bottom: 3%;
+  margin-left: 5%;
 }
 
 .img_logo {
@@ -220,7 +250,7 @@ footer {
 
 .conteneur_titregout {
   display: flex;
-  font-family: "Police", cursive;
+  font-family: "Shrikhand", cursive;
   justify-content: space-between;
   margin-left: 10%;
   margin-right: 12%;
@@ -245,29 +275,62 @@ footer {
 
 .description_menugout {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 75vw;
+  width: 85vw;
+  overflow: hidden;
+  position: relative;
   border-radius: 15px 15px 15px 15px;
-  padding: 5%;
-  margin: auto;
   margin-top: 7%;
+  margin: 3%;
+  height: 50px;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  animation: taille 1000ms backwards;
+}
+.description_menugout--1 {
+  animation-delay: 333ms;
+}
+.description_menugout--2 {
+  animation-delay: 666ms;
+}
+.description_menugout--3 {
+  animation-delay: 999ms;
+}
+.description_menugout--4 {
+  animation-delay: 1332ms;
 }
 
 .icone_gout {
-  padding-top: 27px;
+  padding-top: 15px;
   margin-left: 4%;
 }
 
+.nouveau {
+  height: 25px;
+  width: 70px;
+  background-color: #99E2D0;
+  color: #053817;
+  padding-left: 2%;
+  padding-top: 2%;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  border-radius: 5px 5px 5px 5px;
+}
+
 .icone_cachee {
-  margin-top: -16px;
+  margin-top: -23px;
   opacity: 0;
   color: #FF79DA;
 }
-.icone_cachee:hover {
+.icone_cachee:active {
   opacity: 1;
   transition: opacity 1000ms;
+}
+
+.icone_cacheeaccueil {
+  margin-top: -19px;
+  opacity: 0;
+  color: #FF79DA;
 }
 
 .btncommander {
@@ -317,20 +380,67 @@ footer {
 }
 
 .img_presentationgout {
-  border-radius: none;
   width: 100%;
   height: 175px;
   object-fit: cover;
 }
 
 .prix_platgout {
-  padding-top: 20px;
+  align-self: flex-end;
+  position: absolute;
+  font-weight: 500;
+  right: 1.2rem;
+  margin-bottom: 0.7rem;
+  transition: transform 0.8s;
 }
 
 .conteneur_menugout {
+  width: 75%;
+  margin-left: 0.8rem;
+  line-height: 1.5rem;
+  transition: width 0.8s;
+}
+
+.element_cache {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  right: -60px;
+  background-color: #99E2D0;
+  transition: transform 0.8s;
+}
+
+.element_cache .fas {
+  width: 20px;
+  height: 20px;
+  font-size: 0.8rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99E2D0;
+  transition: transform 1s;
+}
+
+.description_menugout:active .element_cache,
+.description_menugout:active .prix_platgout {
+  transform: translateX(-60px);
+}
+
+.description_menugout:active .conteneur_menugout {
+  width: calc(75% - 60px);
+}
+
+.description_menugout:active .fas {
+  transform: rotate(360deg);
+}
+
+.icone_selection {
+  color: white;
 }
 
 .titre_menugout {
@@ -341,10 +451,18 @@ footer {
 }
 
 .titre_platgout {
-  font-weight: bolder;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .description_platgout {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300;
   font-size: 12px;
 }
 
@@ -355,28 +473,67 @@ footer {
   text-align: justify;
 }
 
-.progress__bar {
-  transform-origin: 0% 50%;
-  border: 1px solid black;
+.loader {
   width: 50px;
-  height: 5px;
-  position: relative;
-  left: 50%;
-  top: 300px;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-  animation: progress-bar 3000ms 150ms;
-  opacity: 0;
-  animation-fill-mode: forwards;
+  height: 50px;
+  display: inline-block;
+  position: absolute;
+  left: 42%;
+  top: 350px;
+  margin: 0%;
 }
 
-@keyframes progress-bar {
+.loader-cercle {
+  border-radius: 50px;
+  border: 6px solid transparent;
+}
+
+.loader-cercle:after {
+  position: absolute;
+  left: -6px;
+  top: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 50px;
+  content: "";
+  border: 6px solid transparent;
+  border-top-color: #9356DC;
+  animation: loader-cercle 1000ms linear 150ms;
+  animation-iteration-count: 2;
+  opacity: 0;
+}
+
+@keyframes loader-cercle {
   0% {
     transform: rotate(0deg);
+    opacity: 1;
+  }
+  75% {
+    transform: rotate(260deg);
     opacity: 1;
   }
   100% {
     transform: rotate(360deg);
     opacity: 0;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes taille {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

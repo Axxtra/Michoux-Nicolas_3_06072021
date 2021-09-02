@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" media="screen and (max-width: 576px)" href="sass/style.css" />
-        <link rel="stylesheet" media="screen and (min-width: 768px)"href="sass/desktop.css" />
+
+        <link rel="stylesheet" media="screen and (max-width: 767px)" href="sass/style.css" />
+        <link rel="stylesheet" media="screen and (min-width: 1025px)" href="sass/desktop.css" />
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="sass/tablett.css" />
         <title>Ohmyfood</title>
         <script src="https://kit.fontawesome.com/d55ef477fb.js" crossorigin="anonymous"></script>
     </head>
@@ -18,116 +18,126 @@
             </div>
         </header>
     
-    
-        <section>
-            <div class="conteneur_imgpresentation4"></div>
-        </section>
-
+        <div class="conteneur_imgpresentation4"></div>
 
         <section>
             <div class="fond_menu">
                 
                 <div class="conteneur_titregout">
-                    <div class="h1_gout"><h1>La palette du goût</div>
-                    <div class="icone_gout"><i class="far fa-heart"><div class="icone_cachee"><i class="fas fa-heart"></i></div></i></div>
+                    <div class="h1_gout"><h1>Le délice des sens</h1></div>
+                    <div class="icone_gout"><i class="far fa-heart"></i><div class="icone_cachee"><i class="fas fa-heart"></i></div></div>
                 </div>
 
-            <div class="conteneur_platsgout">
-                <div class="conteneur_zonemenu">
-                <div class="titre_menugout">ENTREES</div>
+                <div class="conteneur_platsgout">
+                    <div class="conteneur_zonemenu">
+                        <div class="titre_menugout">ENTREES</div>
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Tartare de thon</div>
-                        <div class="description_platgout">Assaisonné au yuzu</div>
-                    </div>
-                    <div class="prix_platgout"><strong>25&euro;</strong></div>
-                </div> 
+                        <div class="description_menugout description_menugout--1"> 
+                            <div class="conteneur_menugout">   
+                                <div class="titre_platgout">Tartare de thon</div>
+                                <div class="description_platgout">Assaisonné au yuzu</div>
+                            </div>
+                            <div class="prix_platgout"><strong>25&euro;</strong></div>
+                            <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                        </div> 
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Bouchée de homard croustillant</div>
-                        <div class="description_platgout">Et sa farandole de petits légumes</div>
-                    </div>
-                    <div class="prix_platgout"><strong>35&euro;</strong></div>
-                </div> 
+                        <div class="description_menugout description_menugout--2"> 
+                            <div class="conteneur_menugout">   
+                                <div class="titre_platgout">Bouchée de homard croustillant</div>
+                                <div class="description_platgout">Et sa farandole de petits légumes</div>
+                            </div>
+                            <div class="prix_platgout"><strong>35&euro;</strong></div>
+                            <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                        </div> 
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Velouté de cèpes</div>
-                        <div class="description_platgout">Aux truffes</div>
+                        <div class="description_menugout description_menugout--3"> 
+                            <div class="conteneur_menugout">   
+                                <div class="titre_platgout">Velouté de cèpes</div>
+                                <div class="description_platgout">Aux truffes</div>
+                            </div>
+                            <div class="prix_platgout"><strong>20&euro;</strong></div>
+                            <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                        </div> 
                     </div>
-                    <div class="prix_platgout"><strong>20&euro;</strong></div>
-                </div> 
-            </div>
-            <div class="conteneur_zonemenu">
-                <div class="titre_menugout">PLATS</div>
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Poulet rôti aux herbes de Provence </div>
-                        <div class="description_platgout">Et sa crème de truffe</div>
-                    </div>
-                    <div class="prix_platgout"><strong>40&euro;</strong></div>
-                </div> 
+                    <div class="conteneur_zonemenu">
+                        <div class="titre_menugout">PLATS</div>
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Langouste rôtie</div>
-                        <div class="description_platgout">Et ses légumes de saison</div>
-                    </div>
-                    <div class="prix_platgout"><strong>35&euro;</strong></div>
-                </div> 
+                        <div class="description_menugout description_menugout--1"> 
+                            <div class="conteneur_menugout">   
+                                <div class="titre_platgout">Poulet rôti aux herbes de Provence </div>
+                                <div class="description_platgout">Et sa crème de truffe</div>
+                            </div>
+                            <div class="prix_platgout"><strong>40&euro;</strong></div>
+                            <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                        </div> 
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Côte de boeuf Angus </div>
-                        <div class="description_platgout">Et sa purée de panais</div>
-                    </div>
-                    <div class="prix_platgout"><strong>44&euro;</strong></div>
-                </div> 
-            </div>
-            <div class="conteneur_zonemenu">
-                <div class="titre_menugout">DESSERTS</div>
+                        <div class="description_menugout description_menugout--2"> 
+                            <div class="conteneur_menugout">   
+                                <div class="titre_platgout">Langouste rôtie</div>
+                                <div class="description_platgout">Et ses légumes de saison</div>
+                            </div>
+                            <div class="prix_platgout"><strong>35&euro;</strong></div>
+                            <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                        </div> 
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Farandole de desserts</div>
-                        <div class="description_platgout">Du chef</div>
+                        <div class="description_menugout description_menugout--3"> 
+                            <div class="conteneur_menugout">   
+                                <div class="titre_platgout">Côte de boeuf Angus </div>
+                                <div class="description_platgout">Et sa purée de panais</div>
+                            </div>
+                            <div class="prix_platgout"><strong>44&euro;</strong></div>
+                            <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                        </div> 
                     </div>
-                    <div class="prix_platgout"><strong>18&euro;</strong></div>
-                </div> 
+                
+                    <div class="conteneur_zonemenu">
+                        <div class="titre_menugout">DESSERTS</div>
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Crème brulée </div>
-                        <div class="description_platgout">Revisitée</div>
-                    </div>
-                    <div class="prix_platgout"><strong>22&euro;</strong></div>
-                </div> 
+                        <div class="description_menugout description_menugout--1"> 
+                            <div class="conteneur_menugout">   
+                                <div class="titre_platgout">Farandole de desserts</div>
+                                <div class="description_platgout">Du chef</div>
+                            </div>
+                            <div class="prix_platgout"><strong>18&euro;</strong></div>
+                            <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                        </div> 
 
-                <div class="description_menugout"> 
-                    <div class="conteneur_menugout">   
-                        <div class="titre_platgout">Tiramisu</div>
-                        <div class="description_platgout">À la noisette</div>
+                        <div class="description_menugout description_menugout--2"> 
+                            <div class="conteneur_menugout">   
+                                <div class="titre_platgout">Crème brulée </div>
+                                <div class="description_platgout">Revisitée</div>
+                            </div>
+                            <div class="prix_platgout"><strong>22&euro;</strong></div>
+                            <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                        </div> 
+
+                        <div class="description_menugout description_menugout--3"> 
+                            <div class="conteneur_menugout">   
+                                <div class="titre_platgout">Tiramisu</div>
+                                <div class="description_platgout">À la noisette</div>
+                            </div>
+                            <div class="prix_platgout"><strong>23&euro;</strong></div>
+                            <div class="element_cache"><span class="icone_selection"><i class="fas fa-check-circle"></i></span></div> 
+                        </div>
                     </div>
-                    <div class="prix_platgout"><strong>23&euro;</strong></div>
-                </div>
-            </div>
+                  
+            
                 <div class="btn_commander">
                     <a href="#" class="btncommander">Commander</a>
                 </div>
             </div>
-            </div>
-        </section>  
-    </body>
+        </div> 
+        </section>   
+    
         <footer>
             <div class="conteneur_footer">
                 <div class="logo_footer"><h2>Ohmyfood</h2></div>
-                <div class="conteneur_proposition"><i class="fas fa-utensils"></i> Proposer un restaurant</div>
-                <div class="conteneur_partenaire"><i class="fas fa-hands-helping"></i> Devenir partenaire</div>
-                <div class="conteneur_mentions">Mentions légales</div>
-                <div class="conteneur_contact">Contact</div>
+                <div class="lien_footer"><span class="icone_proposition"><i class="fas fa-utensils"></i></span><a href="#"> Proposer un restaurant</a></div></a>
+                <a href="#"><div class="lien_footer"><span class="icone_partenaire"><i class="fas fa-hands-helping"></i></span><a href="#"> Devenir partenaire</a></div>
+                <a href="#"><div class="lien_footer"><a href="#">Mentions légales</a></div>
+                <a href="#"><div class="lien_footer"><a href="mailto:adressemail@site.fr">Contact</a></div>
             </div>
-        </footer>      
+        </footer>
+    </body>   
 </html>

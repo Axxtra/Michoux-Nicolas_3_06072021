@@ -341,7 +341,7 @@ footer
 .description_menugout
 {
     display: flex;
-    
+    background-color: white;
     justify-content: space-between;
     width: 85vw;
     overflow: hidden;
@@ -389,7 +389,7 @@ footer
     opacity: 0;
     color: $rose;
 
-    &:active
+    &:hover
     {
         opacity: 1;  
         transition: opacity 1000ms;
@@ -492,7 +492,7 @@ footer
     width: 60px;
     height: 100%;
     right: -60px;
-    background-color: #99E2D0;
+    background-color: $bleu;
     transition: transform 0.8s;
 }
 
@@ -510,18 +510,18 @@ footer
     transition: transform 1s;
 }
 
-.description_menugout:active .element_cache,
-.description_menugout:active .prix_platgout 
+.description_menugout:hover .element_cache,
+.description_menugout:hover .prix_platgout 
 {
     transform: translateX(-60px);
 }
 
-.description_menugout:active .conteneur_menugout 
+.description_menugout:hover .conteneur_menugout 
 {
     width: calc(75% - 60px);
 }
 
-.description_menugout:active .fas 
+.description_menugout:hover .fas 
 {
     transform: rotate(360deg);
 }
@@ -530,6 +530,7 @@ footer
 .icone_selection
 {
     color: white;
+    
 }
 
 .titre_menugout
